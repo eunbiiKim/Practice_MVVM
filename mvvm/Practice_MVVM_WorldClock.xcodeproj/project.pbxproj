@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C35AE652292CA2EF00B2BB30 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35AE651292CA2EF00B2BB30 /* Entity.swift */; };
+		C35AE654292CA31100B2BB30 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35AE653292CA31100B2BB30 /* Repository.swift */; };
+		C35AE656292CA37800B2BB30 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35AE655292CA37800B2BB30 /* Model.swift */; };
+		C35AE658292CA3D700B2BB30 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35AE657292CA3D700B2BB30 /* Service.swift */; };
+		C35AE65B292CA4A800B2BB30 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35AE65A292CA4A800B2BB30 /* ViewModel.swift */; };
 		C3C77A8C292C5E2200B5DB01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C77A8B292C5E2200B5DB01 /* AppDelegate.swift */; };
 		C3C77A8E292C5E2200B5DB01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C77A8D292C5E2200B5DB01 /* SceneDelegate.swift */; };
 		C3C77A90292C5E2200B5DB01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C77A8F292C5E2200B5DB01 /* ViewController.swift */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C35AE651292CA2EF00B2BB30 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		C35AE653292CA31100B2BB30 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		C35AE655292CA37800B2BB30 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C35AE657292CA3D700B2BB30 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C35AE65A292CA4A800B2BB30 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C3C77A88292C5E2200B5DB01 /* Practice_MVVM_WorldClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice_MVVM_WorldClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C77A8B292C5E2200B5DB01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3C77A8D292C5E2200B5DB01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +45,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C35AE64E292CA2C600B2BB30 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3C77A8B292C5E2200B5DB01 /* AppDelegate.swift */,
+				C3C77A8D292C5E2200B5DB01 /* SceneDelegate.swift */,
+				C3C77A94292C5E2400B5DB01 /* Assets.xcassets */,
+				C3C77A96292C5E2400B5DB01 /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		C35AE64F292CA2D200B2BB30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3C77A8F292C5E2200B5DB01 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C35AE650292CA2DF00B2BB30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C35AE653292CA31100B2BB30 /* Repository.swift */,
+				C35AE651292CA2EF00B2BB30 /* Entity.swift */,
+				C35AE657292CA3D700B2BB30 /* Service.swift */,
+				C35AE655292CA37800B2BB30 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C35AE659292CA49900B2BB30 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C35AE65A292CA4A800B2BB30 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C3C77A7F292C5E2200B5DB01 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +102,11 @@
 		C3C77A8A292C5E2200B5DB01 /* Practice_MVVM_WorldClock */ = {
 			isa = PBXGroup;
 			children = (
-				C3C77A8B292C5E2200B5DB01 /* AppDelegate.swift */,
-				C3C77A8D292C5E2200B5DB01 /* SceneDelegate.swift */,
-				C3C77A8F292C5E2200B5DB01 /* ViewController.swift */,
-				C3C77A94292C5E2400B5DB01 /* Assets.xcassets */,
-				C3C77A96292C5E2400B5DB01 /* LaunchScreen.storyboard */,
 				C3C77A99292C5E2400B5DB01 /* Info.plist */,
+				C35AE64E292CA2C600B2BB30 /* Support Files */,
+				C35AE650292CA2DF00B2BB30 /* Model */,
+				C35AE64F292CA2D200B2BB30 /* View */,
+				C35AE659292CA49900B2BB30 /* ViewModel */,
 			);
 			path = Practice_MVVM_WorldClock;
 			sourceTree = "<group>";
@@ -134,8 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C35AE652292CA2EF00B2BB30 /* Entity.swift in Sources */,
 				C3C77A90292C5E2200B5DB01 /* ViewController.swift in Sources */,
+				C35AE654292CA31100B2BB30 /* Repository.swift in Sources */,
+				C35AE658292CA3D700B2BB30 /* Service.swift in Sources */,
+				C35AE656292CA37800B2BB30 /* Model.swift in Sources */,
 				C3C77A8C292C5E2200B5DB01 /* AppDelegate.swift in Sources */,
+				C35AE65B292CA4A800B2BB30 /* ViewModel.swift in Sources */,
 				C3C77A8E292C5E2200B5DB01 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
